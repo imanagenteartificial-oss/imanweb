@@ -46,7 +46,7 @@ export default function Home() {
               <Bot className="text-white w-6 h-6" />
             </div>
             <span className="text-2xl font-orbitron font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70">
-              NEXUS<span className="text-primary">AI</span>
+              IMAN<span className="text-primary">AI</span>
             </span>
           </div>
 
@@ -283,7 +283,7 @@ export default function Home() {
             <div className="flex items-center gap-2">
               <Bot className="text-primary w-6 h-6" />
               <span className="text-xl font-orbitron font-bold text-white">
-                NEXUS<span className="text-primary">AI</span>
+                IMAN<span className="text-primary">AI</span>
               </span>
             </div>
             
@@ -294,7 +294,7 @@ export default function Home() {
             </div>
 
             <div className="text-xs text-muted-foreground font-exo">
-              © 2025 Nexus AI Systems. All rights reserved.
+              © 2025 IMAN AI. All rights reserved.
             </div>
           </div>
         </div>
