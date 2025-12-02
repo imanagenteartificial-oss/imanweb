@@ -17,6 +17,8 @@ import { useState } from "react";
 import { Link } from "wouter";
 import brainImage from "@assets/generated_images/futuristic_neon_ai_brain_illustration.png";
 
+import { HowItWorksDetail } from "@/components/how-it-works-detail";
+
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -53,7 +55,7 @@ export default function Home() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
             {["Soluciones", "Cómo Funciona", "Testimonios", "Precios"].map((item) => (
-              <a key={item} href={`#${item.toLowerCase().replace(" ", "-")}`} className="text-sm font-exo text-muted-foreground hover:text-primary transition-colors uppercase tracking-wider">
+              <a key={item} href={item === "Cómo Funciona" ? "#como-funciona-detalle" : `#${item.toLowerCase().replace(" ", "-")}`} className="text-sm font-exo text-muted-foreground hover:text-primary transition-colors uppercase tracking-wider">
                 {item}
               </a>
             ))}
@@ -77,7 +79,7 @@ export default function Home() {
           >
             <div className="flex flex-col p-4 gap-4">
               {["Soluciones", "Cómo Funciona", "Testimonios", "Precios"].map((item) => (
-                <a key={item} href="#" className="text-muted-foreground hover:text-primary py-2 font-exo uppercase">
+                <a key={item} href={item === "Cómo Funciona" ? "#como-funciona-detalle" : `#`} className="text-muted-foreground hover:text-primary py-2 font-exo uppercase">
                   {item}
                 </a>
               ))}
@@ -222,7 +224,7 @@ export default function Home() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-20 relative overflow-hidden">
+      <section className="py-20 relative overflow-hidden" id="como-funciona">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-orbitron font-bold mb-4 text-glow-secondary">Protocolo de Activación</h2>
@@ -256,6 +258,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <HowItWorksDetail />
 
       {/* CTA Section */}
       <section className="py-24 relative">
