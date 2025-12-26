@@ -46,9 +46,9 @@ export function HowItWorksDetail() {
               </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6 leading-tight">
-              Más que un Chatbot, <br />
+              No es un Chatbot, <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-white">
-                tu Empleado Digital
+                es tu Empleado Digital
               </span>
             </h2>
             <p className="text-lg text-muted-foreground font-exo mb-8 leading-relaxed">
