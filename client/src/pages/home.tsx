@@ -291,7 +291,11 @@ export default function Home() {
             <p className="text-xl text-muted-foreground font-exo mb-8 max-w-2xl mx-auto">
               La competencia sigue durmiendo. Tú puedes automatizar mientras ellos descansan.
             </p>
-            <NeonButton className="text-xl px-10 py-5" glow>
+            <NeonButton 
+              className="text-xl px-10 py-5" 
+              glow
+              onClick={() => window.open("https://wa.me/1234567890?text=Hola,%20estoy%20interesado%20en%20los%20servicios%20de%20IMAN%20AI", "_blank")}
+            >
               Iniciar Transformación <ArrowRight className="ml-2" />
             </NeonButton>
           </NeonCard>
