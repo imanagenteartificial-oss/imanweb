@@ -73,7 +73,7 @@ export function PricingDetail() {
               <NeonButton 
                 className="w-full text-lg py-6" 
                 glow
-                onClick={() => window.open("https://wa.me/1234567890?text=Hola,%20quiero%20adquirir%20el%20plan%20All-In-One%20de%2075%20USD", "_blank")}
+                onClick={() => window.open("https://wa.me/593998452083?text=Hola,%20quiero%20adquirir%20el%20plan%20All-In-One%20de%2075%20USD", "_blank")}
               >
                 Empezar Ahora <ArrowRight className="ml-2 w-5 h-5" />
               </NeonButton>
