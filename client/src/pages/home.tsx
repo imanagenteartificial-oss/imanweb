@@ -61,8 +61,12 @@ export default function Home() {
                 {item}
               </a>
             ))}
-            <NeonButton variant="primary" className="px-6 py-2 h-auto text-sm">
-              Demo Gratis
+            <NeonButton 
+              variant="primary" 
+              className="px-6 py-2 h-auto text-sm"
+              onClick={() => document.getElementById('cta-section')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Iniciar Transformación
             </NeonButton>
           </div>
 
@@ -85,7 +89,15 @@ export default function Home() {
                   {item}
                 </a>
               ))}
-              <NeonButton className="w-full">Demo Gratis</NeonButton>
+              <NeonButton 
+                className="w-full"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  document.getElementById('cta-section')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Iniciar Transformación
+              </NeonButton>
             </div>
           </motion.div>
         )}
@@ -268,7 +280,7 @@ export default function Home() {
       <PricingDetail />
 
       {/* CTA Section */}
-      <section className="py-24 relative">
+      <section id="cta-section" className="py-24 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
         
         <div className="container mx-auto px-4 relative z-10 text-center">
