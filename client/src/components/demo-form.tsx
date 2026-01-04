@@ -8,10 +8,32 @@ import { motion } from "framer-motion";
 import { Send } from "lucide-react";
 
 export function DemoForm() {
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const message = "Hola, quiero entrar a la demo y conversar con el agente IA.";
-    window.open("https://wa.me/593998452083?text=" + encodeURIComponent(message), "_blank");
+    const formData = new FormData(e.target as HTMLFormElement);
+    const data = {
+      name: formData.get("name"),
+      company: formData.get("company"),
+      email: formData.get("email"),
+      interest: formData.get("interest"),
+      submittedAt: new Date().toISOString()
+    };
+
+    try {
+      // Send to webhook
+      fetch("https://appn8n.imanmarketingdigital.com/webhook/paginawebiman", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }).catch(err => console.error("Webhook error:", err));
+
+      const message = "Hola, quiero entrar a la demo y conversar con el agente IA.";
+      window.open("https://wa.me/593998452083?text=" + encodeURIComponent(message), "_blank");
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   return (
@@ -31,6 +53,7 @@ export function DemoForm() {
                 <Label htmlFor="name" className="text-primary font-orbitron text-xs uppercase tracking-widest">Nombre Completo</Label>
                 <Input 
                   id="name" 
+                  name="name"
                   placeholder="Ej: Juan Pérez" 
                   className="bg-white/5 border-primary/20 focus:border-primary text-white font-exo"
                   required
@@ -40,6 +63,7 @@ export function DemoForm() {
                 <Label htmlFor="company" className="text-primary font-orbitron text-xs uppercase tracking-widest">Empresa</Label>
                 <Input 
                   id="company" 
+                  name="company"
                   placeholder="Nombre de tu negocio" 
                   className="bg-white/5 border-primary/20 focus:border-primary text-white font-exo"
                   required
@@ -51,6 +75,7 @@ export function DemoForm() {
               <Label htmlFor="email" className="text-primary font-orbitron text-xs uppercase tracking-widest">Correo Electrónico</Label>
               <Input 
                 id="email" 
+                name="email"
                 type="email" 
                 placeholder="tu@email.com" 
                 className="bg-white/5 border-primary/20 focus:border-primary text-white font-exo"
@@ -62,6 +87,7 @@ export function DemoForm() {
               <Label htmlFor="interest" className="text-primary font-orbitron text-xs uppercase tracking-widest">¿Qué deseas automatizar?</Label>
               <Textarea 
                 id="interest" 
+                name="interest"
                 placeholder="Cuéntanos brevemente tus necesidades..." 
                 className="bg-white/5 border-primary/20 focus:border-primary text-white font-exo min-h-[100px]"
               />
