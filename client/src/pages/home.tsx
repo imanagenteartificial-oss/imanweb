@@ -20,6 +20,7 @@ import brainImage from "@assets/generated_images/futuristic_neon_ai_brain_illust
 import { HowItWorksDetail } from "@/components/how-it-works-detail";
 import { TestimonialsDetail } from "@/components/testimonials-detail";
 import { PricingDetail } from "@/components/pricing-detail";
+import { DemoForm } from "@/components/demo-form";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -135,7 +136,10 @@ export default function Home() {
             </motion.p>
             
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4">
-              <NeonButton className="text-lg px-8 py-4">
+              <NeonButton 
+                className="text-lg px-8 py-4"
+                onClick={() => document.getElementById('demo-section')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Solicitar Demo <ChevronRight className="ml-2 w-5 h-5" />
               </NeonButton>
               <NeonButton variant="outline" className="text-lg px-8 py-4">
@@ -271,6 +275,7 @@ export default function Home() {
       <HowItWorksDetail />
       <TestimonialsDetail />
       <PricingDetail />
+      <DemoForm />
       {/* CTA Section */}
       <section id="cta-section" className="py-24 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
