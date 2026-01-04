@@ -41,7 +41,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background selection:bg-primary/30 selection:text-primary-foreground">
-      
       {/* Navbar */}
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/10">
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
@@ -102,7 +101,6 @@ export default function Home() {
           </motion.div>
         )}
       </nav>
-
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
         {/* Background Elements */}
@@ -159,7 +157,7 @@ export default function Home() {
                 transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
                 src={brainImage} 
                 alt="AI Brain" 
-                className="w-full h-full object-contain drop-shadow-[0_0_50px_rgba(0,243,255,0.3)]"
+                className="w-full h-full object-contain drop-shadow-[0_0_50px_rgba(0,243,255,0.3)] pt-[50px] pb-[50px]"
               />
               
               {/* Floating UI Elements */}
@@ -192,7 +190,6 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-
       {/* Benefits Section */}
       <section id="soluciones" className="py-20 bg-black/30 relative">
         <div className="container mx-auto px-4">
@@ -236,7 +233,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* How It Works Section */}
       <section className="py-20 relative overflow-hidden" id="como-funciona">
         <div className="container mx-auto px-4">
@@ -272,13 +268,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <HowItWorksDetail />
-
       <TestimonialsDetail />
-
       <PricingDetail />
-
       {/* CTA Section */}
       <section id="cta-section" className="py-24 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
@@ -301,7 +293,6 @@ export default function Home() {
           </NeonCard>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="border-t border-white/10 bg-black py-12">
         <div className="container mx-auto px-4">
