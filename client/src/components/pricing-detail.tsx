@@ -65,7 +65,7 @@ export function PricingDetail() {
                 <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
                   <Check className="w-3.5 h-3.5 text-primary" />
                 </div>
-                <p className="text-muted-foreground font-exo text-sm">Soporte técnico prioritario</p>
+                <p className="text-muted-foreground font-exo text-sm">Soporte técnico ilimitado</p>
               </div>
             </div>
 
