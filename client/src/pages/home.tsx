@@ -291,9 +291,9 @@ export default function Home() {
             <NeonButton 
               className="text-xl px-10 py-5" 
               glow
-              onClick={() => window.open("https://wa.me/593998452083?text=Hola,%20estoy%20interesado%20en%20los%20servicios%20de%20IMAN%20AI", "_blank")}
+              onClick={() => window.open("https://calendly.com/imanagenteartificial/sesion-cotizacion-proyecto", "_blank")}
             >
-              Iniciar Transformación <ArrowRight className="ml-2" />
+              INICIAR TRANSFORMACION AGENDA TU VIDEOLLAMADA <ArrowRight className="ml-2" />
             </NeonButton>
           </NeonCard>
         </div>
