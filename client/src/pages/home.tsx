@@ -167,7 +167,7 @@ export default function Home() {
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.5 }}
-                className="absolute top-10 left-0 bg-black/60 backdrop-blur-md border border-primary/30 p-4 rounded-lg"
+                className="absolute top-20 left-0 bg-black/60 backdrop-blur-md border border-primary/30 p-4 rounded-lg z-20"
               >
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 rounded-full bg-green-500" />
@@ -180,7 +180,7 @@ export default function Home() {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.7 }}
-                className="absolute bottom-10 right-0 bg-black/60 backdrop-blur-md border border-secondary/30 p-4 rounded-lg"
+                className="absolute bottom-4 right-0 bg-black/60 backdrop-blur-md border border-secondary/30 p-4 rounded-lg z-20"
               >
                 <div className="flex items-center gap-3">
                   <Zap className="w-4 h-4 text-secondary" />
