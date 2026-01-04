@@ -11,7 +11,7 @@ export function DemoForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const message = "Hola, quiero entrar a la demo y conversar con el agente IA.";
-    window.open(`https://wa.me/593998452083?text=${encodeURIComponent(message)}`, "_blank");
+    window.open("https://wa.me/593998452083?text=" + encodeURIComponent(message), "_blank");
   };
 
   return (
