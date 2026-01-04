@@ -293,7 +293,7 @@ export default function Home() {
               glow
               onClick={() => window.open("https://calendly.com/imanagenteartificial/sesion-cotizacion-proyecto", "_blank")}
             >
-              INICIAR TRANSFORMACION AGENDA TU VIDEOLLAMADA <ArrowRight className="ml-2" />
+              EMPIEZA HOY - AGENDA TU VIDEOLLAMADA <ArrowRight className="ml-2" />
             </NeonButton>
           </NeonCard>
         </div>

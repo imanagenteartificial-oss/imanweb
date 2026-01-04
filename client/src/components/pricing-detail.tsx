@@ -75,7 +75,7 @@ export function PricingDetail() {
                 glow
                 onClick={() => window.open("https://calendly.com/imanagenteartificial/sesion-cotizacion-proyecto", "_blank")}
               >
-                AGENDA TU VIDEOLLAMADA <ArrowRight className="ml-2 w-5 h-5" />
+                EMPIEZA HOY - AGENDA TU VIDEOLLAMADA <ArrowRight className="ml-2 w-5 h-5" />
               </NeonButton>
               <p className="text-center text-xs text-muted-foreground mt-4 font-exo">
                 Sin contratos forzosos. Cancela cuando quieras.
