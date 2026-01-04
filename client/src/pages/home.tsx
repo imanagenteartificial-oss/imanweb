@@ -165,7 +165,7 @@ export default function Home() {
                 transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
                 src={brainImage} 
                 alt="AI Brain" 
-                className="w-full h-full object-contain drop-shadow-[0_0_50px_rgba(0,243,255,0.3)] pt-[50px] pb-[50px]"
+                className="w-full h-full object-contain drop-shadow-[0_0_50px_rgba(0,243,255,0.3)] pt-[75px] pb-[75px]"
               />
               
               {/* Floating UI Elements */}
