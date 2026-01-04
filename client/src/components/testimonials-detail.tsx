@@ -1,6 +1,6 @@
 import { NeonCard } from "@/components/ui/neon-card";
 import { motion } from "framer-motion";
-import { Building2, ShoppingBag, Dumbbell, Zap, Store, Heart, FerrisWheel, MonitorPlay } from "lucide-react";
+import { Building2, ShoppingBag, Dumbbell, Zap, Store, Heart, FerrisWheel, MonitorPlay, Ticket, GraduationCap } from "lucide-react";
 
 export function TestimonialsDetail() {
   const clients = [
@@ -12,11 +12,13 @@ export function TestimonialsDetail() {
     { name: "AMORANIMAL", icon: <Heart className="text-secondary" />, category: "Veterinaria" },
     { name: "MARIOS PARK", icon: <FerrisWheel className="text-primary" />, category: "Entretenimiento" },
     { name: "PUBLIMARK", icon: <Store className="text-secondary" />, category: "Marketing" },
+    { name: "INOVA", icon: <Ticket className="text-primary" />, category: "Eventos" },
+    { name: "COACHGROUP", icon: <GraduationCap className="text-secondary" />, category: "Escuela Online" },
   ];
 
   const marqueeVariants = {
     animate: {
-      x: [0, -1035],
+      x: [0, -1295],
       transition: {
         x: {
           repeat: Infinity,
