@@ -31,7 +31,7 @@ export function PricingDetail() {
 
             <div className="text-center pt-8 pb-8 border-b border-white/10">
               <div className="flex items-center justify-center gap-2 mb-2">
-                <span className="text-muted-foreground line-through font-exo text-lg">$150 USD</span>
+                <span className="text-muted-foreground line-through font-exo text-lg">$700 USD</span>
               </div>
               <div className="flex items-baseline justify-center gap-1">
                 <span className="text-5xl md:text-6xl font-orbitron font-bold text-white">$75</span>
