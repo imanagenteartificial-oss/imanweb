@@ -14,6 +14,7 @@ export function DemoForm() {
     const data = {
       name: formData.get("name"),
       company: formData.get("company"),
+      phone: formData.get("phone"),
       email: formData.get("email"),
       interest: formData.get("interest"),
       submittedAt: new Date().toISOString()
@@ -71,16 +72,29 @@ export function DemoForm() {
               </div>
             </div>
 
-            <div className="space-y-2">
-              <Label htmlFor="email" className="text-primary font-orbitron text-xs uppercase tracking-widest">Correo Electrónico</Label>
-              <Input 
-                id="email" 
-                name="email"
-                type="email" 
-                placeholder="tu@email.com" 
-                className="bg-white/5 border-primary/20 focus:border-primary text-white font-exo"
-                required
-              />
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <Label htmlFor="email" className="text-primary font-orbitron text-xs uppercase tracking-widest">Correo Electrónico</Label>
+                <Input 
+                  id="email" 
+                  name="email"
+                  type="email" 
+                  placeholder="tu@email.com" 
+                  className="bg-white/5 border-primary/20 focus:border-primary text-white font-exo"
+                  required
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="phone" className="text-primary font-orbitron text-xs uppercase tracking-widest">Teléfono / WhatsApp</Label>
+                <Input 
+                  id="phone" 
+                  name="phone"
+                  type="tel" 
+                  placeholder="Ej: +593 99 845 2083" 
+                  className="bg-white/5 border-primary/20 focus:border-primary text-white font-exo"
+                  required
+                />
+              </div>
             </div>
 
             <div className="space-y-2">
