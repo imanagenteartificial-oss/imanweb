@@ -59,7 +59,7 @@ export function PricingDetail() {
                 <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
                   <Check className="w-3.5 h-3.5 text-primary" />
                 </div>
-                <p className="text-muted-foreground font-exo text-sm">Integración en sitio web y redes</p>
+                <p className="text-muted-foreground font-exo text-sm">Incluye CRM con embudo de vendtas y etiquetas, segumientos al lead tipo humano, envio de promocion publicidad al cliente, se integra con Messenger de facebook, y con DM de instagram, incluye A gente de creacion de contenido y publicacion para redes sociales Facebook e Instagram.</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
