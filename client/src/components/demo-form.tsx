@@ -21,9 +21,7 @@ export function DemoForm() {
           <h2 className="text-3xl md:text-4xl font-orbitron font-bold mb-6 text-glow-primary">
             Solicitar Demo Interactiva
           </h2>
-          <p className="text-lg text-muted-foreground font-exo">
-            llena el formulario con tus datos y dale click al boton donde te llevara a tenre una conversacion fluida en whatsapp con nuestro agente IA, en donde podras hacerle todas las preguntas que uqieras para aclarar todas tus dudas sobre nuestro servicio.
-          </p>
+          <p className="text-lg text-muted-foreground font-exo text-center">llena el formulario con tus datos y dale click al boton entrar a demo donde te llevara a tener una conversacion fluida en whatsapp con nuestro agente IA, en donde podras hacerle todas las preguntas que quieras para aclarar todas tus dudas sobre nuestro servicio y ver la potencia que tiene la inteligencia artificial aplicada a los negocios.</p>
         </div>
 
         <NeonCard className="max-w-2xl mx-auto p-8 bg-black/60 backdrop-blur-xl border-primary/20">
