@@ -73,9 +73,9 @@ export function PricingDetail() {
               <NeonButton 
                 className="w-full text-lg py-6" 
                 glow
-                onClick={() => window.open("https://wa.me/593998452083?text=Hola,%20quiero%20adquirir%20el%20plan%20All-In-One%20de%2075%20USD", "_blank")}
+                onClick={() => window.open("https://calendly.com/imanagenteartificial/sesion-cotizacion-proyecto", "_blank")}
               >
-                Empezar Ahora <ArrowRight className="ml-2 w-5 h-5" />
+                AGENDA TU VIDEOLLAMADA <ArrowRight className="ml-2 w-5 h-5" />
               </NeonButton>
               <p className="text-center text-xs text-muted-foreground mt-4 font-exo">
                 Sin contratos forzosos. Cancela cuando quieras.
