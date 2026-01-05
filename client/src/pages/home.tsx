@@ -143,8 +143,9 @@ export default function Home() {
                 Solicitar Demo <ChevronRight className="ml-2 w-5 h-5" />
               </NeonButton>
               <NeonButton 
-                variant="outline" 
+                variant="primary" 
                 className="text-lg px-8 py-4"
+                glow
                 onClick={() => window.open("https://mnabbcmffeiwdazmqfut.supabase.co/storage/v1/object/sign/IMAN%20FOTOS%20Y%20VIDEOS/SVID_20250718_122805_1%20(1).mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8wMjc4MjcxMC1hYTAwLTRmMGQtOWRmMy1lOTNlZGVlMjBkY2EiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJJTUFOIEZPVE9TIFkgVklERU9TL1NWSURfMjAyNTA3MThfMTIyODA1XzEgKDEpLm1wNCIsImlhdCI6MTc2NzU1NTE3MCwiZXhwIjo0OTIxMTU1MTcwfQ.50HJMhGEx_yMB6YT29PJSbi_npM3ixRXSb3ZUtKRxY8", "_blank")}
               >
                 mira nuestro video desmotrativo del Agente de atencion
