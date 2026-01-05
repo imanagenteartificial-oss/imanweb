@@ -35,8 +35,7 @@ const NeonButton = forwardRef<HTMLButtonElement, NeonButtonProps>(
         className={cn(baseStyles, variants[variant], glowClass, className)}
         {...props}
       >
-        <span className="relative z-10 flex items-center gap-2">{children}</span>
-        
+        <span className="relative z-10 flex items-center gap-2 text-center text-[16px]">{children}</span>
         {/* Animated background shine effect */}
         <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_2s_infinite] bg-gradient-to-r from-transparent via-white/10 to-transparent z-0" />
       </motion.button>
