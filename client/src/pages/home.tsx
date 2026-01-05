@@ -45,10 +45,12 @@ export default function Home() {
       {/* Navbar */}
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/10">
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-[0_0_15px_rgba(0,243,255,0.5)]">
-              <Bot className="text-white w-6 h-6" />
-            </div>
+          <div className="flex items-center gap-4">
+            <img 
+              src="https://mnabbcmffeiwdazmqfut.supabase.co/storage/v1/object/sign/IMAN%20FOTOS%20Y%20VIDEOS/logo%20iman.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8wMjc4MjcxMC1hYTAwLTRmMGQtOWRmMy1lOTNlZGVlMjBkY2EiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJJTUFOIEZPVE9TIFkgVklERU9TL2xvZ28gaW1hbi5qcGVnIiwiaWF0IjoxNzY3NjQ1ODIyLCJleHAiOjQ5MjEyNDU4MjJ9.M710VXSDmrBjVB-GEXlMB03q222HmHq97mljSlAfhGo" 
+              alt="IMAN AI Logo" 
+              className="w-12 h-12 rounded object-cover shadow-[0_0_15px_rgba(0,243,255,0.5)]"
+            />
             <span className="text-2xl font-orbitron font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70">
               IMAN<span className="text-primary">AI</span>
             </span>
