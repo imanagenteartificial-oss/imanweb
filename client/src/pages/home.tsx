@@ -54,7 +54,6 @@ function FluidCursor() {
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [effectEnabled, setEffectEnabled] = useState(false);
 
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
@@ -73,7 +72,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background selection:bg-primary/30 selection:text-primary-foreground">
-      {effectEnabled && <FluidCursor />}
+      <FluidCursor />
       {/* Navbar */}
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/10">
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
@@ -83,19 +82,9 @@ export default function Home() {
               alt="IMAN AI Logo" 
               className="w-12 h-12 rounded object-contain shadow-[0_0_15px_rgba(0,243,255,0.3)] bg-white/5 p-1"
             />
-            <div className="flex flex-col">
-              <span className="text-2xl font-orbitron font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70 leading-none">
-                IMAN<span className="text-primary">AI</span>
-              </span>
-              <div className="flex items-center gap-2 mt-1">
-                <span className="text-[10px] font-exo text-muted-foreground uppercase tracking-tighter">Efecto IA</span>
-                <Switch 
-                  checked={effectEnabled} 
-                  onCheckedChange={setEffectEnabled}
-                  className="scale-75 data-[state=checked]:bg-primary"
-                />
-              </div>
-            </div>
+            <span className="text-2xl font-orbitron font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70">
+              IMAN<span className="text-primary">AI</span>
+            </span>
           </div>
 
           {/* Desktop Menu */}
