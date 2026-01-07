@@ -1,6 +1,7 @@
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useSpring } from "framer-motion";
 import { NeonButton } from "@/components/ui/neon-button";
 import { NeonCard } from "@/components/ui/neon-card";
+import { Switch } from "@/components/ui/switch";
 import { 
   Bot, 
   Cpu, 
@@ -13,7 +14,7 @@ import {
   X,
   ArrowRight
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Link } from "wouter";
 import brainImage from "@assets/generated_images/futuristic_neon_ai_brain_illustration.png";
 
@@ -22,8 +23,38 @@ import { TestimonialsDetail } from "@/components/testimonials-detail";
 import { PricingDetail } from "@/components/pricing-detail";
 import { DemoForm } from "@/components/demo-form";
 
+function FluidCursor() {
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  const springConfig = { damping: 25, stiffness: 150 };
+  const springX = useSpring(mouseX, springConfig);
+  const springY = useSpring(mouseY, springConfig);
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      mouseX.set(e.clientX);
+      mouseY.set(e.clientY);
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, [mouseX, mouseY]);
+
+  return (
+    <motion.div
+      className="cursor-follower"
+      style={{
+        left: springX,
+        top: springY,
+      }}
+    />
+  );
+}
+
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [effectEnabled, setEffectEnabled] = useState(false);
 
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
@@ -42,6 +73,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background selection:bg-primary/30 selection:text-primary-foreground">
+      {effectEnabled && <FluidCursor />}
       {/* Navbar */}
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/10">
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
@@ -51,9 +83,19 @@ export default function Home() {
               alt="IMAN AI Logo" 
               className="w-12 h-12 rounded object-contain shadow-[0_0_15px_rgba(0,243,255,0.3)] bg-white/5 p-1"
             />
-            <span className="text-2xl font-orbitron font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70">
-              IMAN<span className="text-primary">AI</span>
-            </span>
+            <div className="flex flex-col">
+              <span className="text-2xl font-orbitron font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70 leading-none">
+                IMAN<span className="text-primary">AI</span>
+              </span>
+              <div className="flex items-center gap-2 mt-1">
+                <span className="text-[10px] font-exo text-muted-foreground uppercase tracking-tighter">Efecto IA</span>
+                <Switch 
+                  checked={effectEnabled} 
+                  onCheckedChange={setEffectEnabled}
+                  className="scale-75 data-[state=checked]:bg-primary"
+                />
+              </div>
+            </div>
           </div>
 
           {/* Desktop Menu */}
