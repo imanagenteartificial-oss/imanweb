@@ -51,6 +51,15 @@ export function PricingDetail() {
                 </div>
                 <p className="text-white font-exo text-sm"><span className="font-bold text-secondary">BONUS:</span> 1 Campaña de Facebook Ads GRATIS al mes</p>
               </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
+                  <Check className="w-3.5 h-3.5 text-primary" />
+                </div>
+                <p className="text-muted-foreground font-exo text-sm">
+                  Incluye CRM con embudo de ventas y etiquetas para integrar a equipo de la empresa, seguimientos al lead tipo humano, agendamientos de citas y recordatorios, envío de promociones y publicidad al cliente.
+                </p>
+              </div>
               
               <div className="flex items-start gap-3">
                 <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
