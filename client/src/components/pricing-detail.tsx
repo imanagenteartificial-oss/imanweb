@@ -56,9 +56,7 @@ export function PricingDetail() {
                 <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
                   <Check className="w-3.5 h-3.5 text-primary" />
                 </div>
-                <p className="text-muted-foreground font-exo text-sm">
-                  Incluye CRM con embudo de ventas y etiquetas para integrar a equipo de la empresa, seguimientos al lead tipo humano, agendamientos de citas y recordatorios, envío de promociones y publicidad al cliente.
-                </p>
+                <p className="text-muted-foreground font-exo text-sm">Incluye CRM con embudo de ventas y etiquetas para integrar a equipo de la empresa, seguimientos al lead tipo humano, agendamientos de citas y recordatorios, envío de promociones y publicidad al cliente, envio en automatico de cotizaciones proformas, integracion con logistica, proveedores, departamento de ventas, gerencia, produccion y demas departamentos de la empresa.</p>
               </div>
               
               <div className="flex items-start gap-3">
