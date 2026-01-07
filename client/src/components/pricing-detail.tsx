@@ -49,18 +49,50 @@ export function PricingDetail() {
                 </div>
                 <p className="text-white font-exo text-sm"><span className="font-bold text-white">Agente de IA 24/7</span> (Atención y Ventas)</p>
               </div>
+
               <div className="flex items-start gap-3">
                 <div className="w-6 h-6 rounded-full bg-secondary/20 flex items-center justify-center shrink-0 mt-0.5">
                   <Zap className="w-3.5 h-3.5 text-secondary" />
                 </div>
                 <p className="text-white font-exo text-sm"><span className="font-bold text-secondary">BONUS:</span> 1 Campaña de Facebook Ads GRATIS al mes</p>
               </div>
+
               <div className="flex items-start gap-3">
                 <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
                   <Check className="w-3.5 h-3.5 text-primary" />
                 </div>
-                <p className="text-muted-foreground font-exo text-sm">Incluye CRM con embudo de ventas y etiquetas, segumientos al lead tipo humano, agendamientos de citas y recordatorios, envio de promocion publicidad al cliente, se integra con Messenger de facebook, y con DM de instagram, incluye Agente de creacion de contenido y publicacion para redes sociales Facebook e Instagram, emailing masivo.</p>
+                <p className="text-muted-foreground font-exo text-sm">
+                  Incluye CRM con embudo de ventas y etiquetas, seguimientos al lead tipo humano, agendamientos de citas y recordatorios, envío de promociones y publicidad al cliente, e-mailing masivo.
+                </p>
               </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
+                  <Check className="w-3.5 h-3.5 text-primary" />
+                </div>
+                <p className="text-muted-foreground font-exo text-sm">
+                  Integración fluida con Messenger de Facebook y DM de Instagram, donde las conversaciones despiertan solas.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
+                  <Check className="w-3.5 h-3.5 text-primary" />
+                </div>
+                <p className="text-muted-foreground font-exo text-sm">
+                  Agente inteligente de creación y publicación de contenido para Facebook e Instagram, sembrando presencia constante y visión a largo plazo.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
+                  <Check className="w-3.5 h-3.5 text-primary" />
+                </div>
+                <p className="text-muted-foreground font-exo text-sm">
+                  Agente de prospección de correos calificados, diseñado para campañas de email marketing que no persiguen, atraen.
+                </p>
+              </div>
+
               <div className="flex items-start gap-3">
                 <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
                   <Check className="w-3.5 h-3.5 text-primary" />
