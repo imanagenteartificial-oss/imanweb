@@ -34,7 +34,7 @@ export function PricingDetail() {
                 <span className="text-muted-foreground line-through font-exo text-lg">$700 USD</span>
               </div>
               <div className="flex items-baseline justify-center gap-1">
-                <span className="text-5xl md:text-6xl font-orbitron font-bold text-white">$345</span>
+                <span className="text-5xl md:text-6xl font-orbitron font-bold text-white">$230</span>
                 <span className="text-xl font-exo text-muted-foreground">/mes</span>
               </div>
               <div className="mt-4 inline-block px-3 py-1 rounded bg-primary/20 border border-primary/30">
