@@ -58,7 +58,7 @@ export function PricingDetail() {
                 </div>
                 <p className="text-muted-foreground font-exo text-sm">Incluye CRM con embudo de ventas y etiquetas para integrar a equipo de la empresa, seguimientos al lead tipo humano, agendamientos de citas y recordatorios, envío de promociones y publicidad al cliente, envio en automatico de cotizaciones proformas, integracion con logistica, proveedores, departamento de ventas, gerencia, produccion y demas departamentos de la empresa.</p>
               </div>
-              
+
               <div className="flex items-start gap-3">
                 <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
                   <Check className="w-3.5 h-3.5 text-primary" />
@@ -68,9 +68,9 @@ export function PricingDetail() {
             </div>
 
             <div className="pt-4 mt-auto">
-              <NeonButton 
+              <NeonButton
                 variant="primary"
-                className="w-full text-lg py-6" 
+                className="w-full text-lg py-6"
                 glow
                 onClick={() => window.open("https://calendly.com/imanagenteartificial/sesion-cotizacion-proyecto", "_blank")}
               >
@@ -154,13 +154,31 @@ export function PricingDetail() {
                 <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
                   <Check className="w-3.5 h-3.5 text-primary" />
                 </div>
+                <p className="text-white font-exo text-sm">
+                  1 automatización extra
+                </p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
+                  <Check className="w-3.5 h-3.5 text-primary" />
+                </div>
+                <p className="text-white font-exo text-sm">
+                  Nos acoplamos a la necesidad de automatización que necesite la empresa
+                </p>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0 mt-0.5">
+                  <Check className="w-3.5 h-3.5 text-primary" />
+                </div>
                 <p className="text-muted-foreground font-exo text-sm">Soporte técnico ilimitado</p>
               </div>
             </div>
 
             <div className="pt-4 mt-auto">
-              <NeonButton 
-                className="w-full text-lg py-6 shadow-[0_0_20px_rgba(0,243,255,0.4)]" 
+              <NeonButton
+                className="w-full text-lg py-6 shadow-[0_0_20px_rgba(0,243,255,0.4)]"
                 glow
                 onClick={() => window.open("https://calendly.com/imanagenteartificial/sesion-cotizacion-proyecto", "_blank")}
               >

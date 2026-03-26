@@ -9,7 +9,7 @@ import { PricingDetail } from "@/components/pricing-detail";
 import { HowItWorksDetail } from "@/components/how-it-works-detail";
 import { TestimonialsDetail } from "@/components/testimonials-detail";
 import { DemoForm } from "@/components/demo-form";
-import { TailedCursor } from "@/components/ui/tailed-cursor";
+import FluidCursor from "@/components/ui/FluidCursor";
 
 function Router() {
   return (
@@ -30,14 +30,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <TailedCursor
-          baseThickness={30}
-          colors={['hsl(190, 100%, 50%)', 'hsl(300, 100%, 50%)']}
-          speedMultiplier={0.5}
-          maxAge={500}
-          enableFade={true}
-          enableShaderEffect={true}
-        />
+        <FluidCursor />
         <Toaster />
         <Router />
       </TooltipProvider>

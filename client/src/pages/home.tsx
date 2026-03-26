@@ -88,7 +88,7 @@ export default function Home() {
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <img
-              src="https://mnabbcmffeiwdazmqfut.supabase.co/storage/v1/object/sign/IMAN%20FOTOS%20Y%20VIDEOS/logo%20iman.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8wMjc4MjcxMC1hYTAwLTRmMGQtOWRmMy1lOTNlZGVlMjBkY2EiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJJTUFOIEZPVE9TIFkgVklERU9TL2xvZ28gaW1hbi5qcGVnIiwiaWF0IjoxNzY3NjQ1ODIyLCJleHAiOjQ5MjEyNDU4MjJ9.M710VXSDmrBjVB-GEXlMB03q222HmHq97mljSlAfhGo"
+              src="https://wdylnfbjiysejkvdftgf.supabase.co/storage/v1/object/sign/varios/logo%20iman.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80ZjI5ZDNmZS1hY2NlLTRiNzMtYjQyZi01MTk4ZGNjNGYzNmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ2YXJpb3MvbG9nbyBpbWFuLmpwZWciLCJpYXQiOjE3NzQ0OTQwNjUsImV4cCI6MzMzMTA0OTQwNjV9.kPpCXalP5KIZraKsWkIN0fl823lTt7Osy4sSqxmDNbY"
               alt="IMAN AI Logo"
               className="w-12 h-12 rounded object-contain shadow-[0_0_15px_rgba(0,243,255,0.3)] bg-white/5 p-1"
             />
@@ -189,7 +189,7 @@ export default function Home() {
                 variant="primary"
                 className="text-lg px-8 py-4"
                 glow
-                onClick={() => window.open("https://mnabbcmffeiwdazmqfut.supabase.co/storage/v1/object/sign/IMAN%20FOTOS%20Y%20VIDEOS/SVID_20250718_122805_1%20(1).mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8wMjc4MjcxMC1hYTAwLTRmMGQtOWRmMy1lOTNlZGVlMjBkY2EiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJJTUFOIEZPVE9TIFkgVklERU9TL1NWSURfMjAyNTA3MThfMTIyODA1XzEgKDEpLm1wNCIsImlhdCI6MTc2NzU1NTE3MCwiZXhwIjo0OTIxMTU1MTcwfQ.50HJMhGEx_yMB6YT29PJSbi_npM3ixRXSb3ZUtKRxY8", "_blank")}
+                onClick={() => window.open("https://wdylnfbjiysejkvdftgf.supabase.co/storage/v1/object/sign/varios/SVID_20250718_122805_1%20(3).mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80ZjI5ZDNmZS1hY2NlLTRiNzMtYjQyZi01MTk4ZGNjNGYzNmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ2YXJpb3MvU1ZJRF8yMDI1MDcxOF8xMjI4MDVfMSAoMykubXA0IiwiaWF0IjoxNzc0NDkzOTgxLCJleHAiOjMzMzEwNDkzOTgxfQ.S6bAjQloH4cbaKiTo1opm8VjiA11TqEV5p0WzKTWzK0", "_blank")}
               >
                 mira nuestro video desmotrativo del Agente de atencion
               </NeonButton>
