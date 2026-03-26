@@ -2,6 +2,7 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 import { NeonButton } from "@/components/ui/neon-button";
 import { NeonCard } from "@/components/ui/neon-card";
 import { Switch } from "@/components/ui/switch";
+<<<<<<< HEAD
 import {
   Bot,
   Cpu,
@@ -11,6 +12,17 @@ import {
   ShieldCheck,
   ChevronRight,
   Menu,
+=======
+import { 
+  Bot, 
+  Cpu, 
+  Zap, 
+  BarChart3, 
+  Clock, 
+  ShieldCheck, 
+  ChevronRight, 
+  Menu, 
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
   X,
   ArrowRight
 } from "lucide-react";
@@ -22,6 +34,7 @@ import { HowItWorksDetail } from "@/components/how-it-works-detail";
 import { TestimonialsDetail } from "@/components/testimonials-detail";
 import { PricingDetail } from "@/components/pricing-detail";
 import { DemoForm } from "@/components/demo-form";
+<<<<<<< HEAD
 import { ContactSection } from "@/components/sections/ContactSection";
 import {
   Dialog,
@@ -32,6 +45,8 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
+=======
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
 
 function FluidCursor() {
   const mouseX = useMotionValue(0);
@@ -87,9 +102,15 @@ export default function Home() {
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/10">
         <div className="container mx-auto px-4 h-20 flex items-center justify-between">
           <div className="flex items-center gap-4">
+<<<<<<< HEAD
             <img
               src="https://wdylnfbjiysejkvdftgf.supabase.co/storage/v1/object/sign/varios/logo%20iman.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80ZjI5ZDNmZS1hY2NlLTRiNzMtYjQyZi01MTk4ZGNjNGYzNmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ2YXJpb3MvbG9nbyBpbWFuLmpwZWciLCJpYXQiOjE3NzQ0OTQwNjUsImV4cCI6MzMzMTA0OTQwNjV9.kPpCXalP5KIZraKsWkIN0fl823lTt7Osy4sSqxmDNbY"
               alt="IMAN AI Logo"
+=======
+            <img 
+              src="https://mnabbcmffeiwdazmqfut.supabase.co/storage/v1/object/sign/IMAN%20FOTOS%20Y%20VIDEOS/logo%20iman.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8wMjc4MjcxMC1hYTAwLTRmMGQtOWRmMy1lOTNlZGVlMjBkY2EiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJJTUFOIEZPVE9TIFkgVklERU9TL2xvZ28gaW1hbi5qcGVnIiwiaWF0IjoxNzY3NjQ1ODIyLCJleHAiOjQ5MjEyNDU4MjJ9.M710VXSDmrBjVB-GEXlMB03q222HmHq97mljSlAfhGo" 
+              alt="IMAN AI Logo" 
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
               className="w-12 h-12 rounded object-contain shadow-[0_0_15px_rgba(0,243,255,0.3)] bg-white/5 p-1"
             />
             <span className="text-2xl font-orbitron font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70">
@@ -104,8 +125,13 @@ export default function Home() {
                 {item}
               </a>
             ))}
+<<<<<<< HEAD
             <NeonButton
               variant="primary"
+=======
+            <NeonButton 
+              variant="primary" 
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
               className="px-6 py-2 h-auto text-sm"
               onClick={() => document.getElementById('cta-section')?.scrollIntoView({ behavior: 'smooth' })}
             >
@@ -121,7 +147,11 @@ export default function Home() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
+<<<<<<< HEAD
           <motion.div
+=======
+          <motion.div 
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             className="md:hidden bg-background border-b border-white/10"
@@ -132,7 +162,11 @@ export default function Home() {
                   {item}
                 </a>
               ))}
+<<<<<<< HEAD
               <NeonButton
+=======
+              <NeonButton 
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
                 className="w-full"
                 onClick={() => {
                   setIsMenuOpen(false);
@@ -153,7 +187,11 @@ export default function Home() {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[100px] -z-10 animate-pulse" style={{ animationDelay: "2s" }} />
 
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+<<<<<<< HEAD
           <motion.div
+=======
+          <motion.div 
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
@@ -165,6 +203,7 @@ export default function Home() {
                 Tecnología del Futuro Hoy
               </span>
             </motion.div>
+<<<<<<< HEAD
 
             <motion.h1 variants={fadeIn} className="md:text-7xl font-orbitron font-bold mb-6 text-[41px]">
               Automatizamos <br />
@@ -180,23 +219,52 @@ export default function Home() {
 
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4">
               <NeonButton
+=======
+            
+            <motion.h1 variants={fadeIn} className="md:text-7xl font-orbitron font-bold mb-6 text-[41px]">
+              Automatizamos <br/>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-secondary animate-gradient bg-300%">
+                tu Negocio
+              </span> <br/>
+              con IA 24/7
+            </motion.h1>
+            
+            <motion.p variants={fadeIn} className="text-xl text-muted-foreground mb-8 max-w-lg font-exo leading-relaxed">
+              Libera el potencial humano delegando lo repetitivo a la inteligencia sintética. Eficiencia absoluta, sin pausas, sin errores.
+            </motion.p>
+            
+            <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4">
+              <NeonButton 
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
                 className="text-lg px-8 py-4"
                 onClick={() => document.getElementById('demo-section')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Solicitar Demo <ChevronRight className="ml-2 w-5 h-5" />
               </NeonButton>
+<<<<<<< HEAD
               <NeonButton
                 variant="primary"
                 className="text-lg px-8 py-4"
                 glow
                 onClick={() => window.open("https://wdylnfbjiysejkvdftgf.supabase.co/storage/v1/object/sign/varios/SVID_20250718_122805_1%20(3).mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80ZjI5ZDNmZS1hY2NlLTRiNzMtYjQyZi01MTk4ZGNjNGYzNmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ2YXJpb3MvU1ZJRF8yMDI1MDcxOF8xMjI4MDVfMSAoMykubXA0IiwiaWF0IjoxNzc0NDkzOTgxLCJleHAiOjMzMzEwNDkzOTgxfQ.S6bAjQloH4cbaKiTo1opm8VjiA11TqEV5p0WzKTWzK0", "_blank")}
+=======
+              <NeonButton 
+                variant="primary" 
+                className="text-lg px-8 py-4"
+                glow
+                onClick={() => window.open("https://mnabbcmffeiwdazmqfut.supabase.co/storage/v1/object/sign/IMAN%20FOTOS%20Y%20VIDEOS/SVID_20250718_122805_1%20(1).mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8wMjc4MjcxMC1hYTAwLTRmMGQtOWRmMy1lOTNlZGVlMjBkY2EiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJJTUFOIEZPVE9TIFkgVklERU9TL1NWSURfMjAyNTA3MThfMTIyODA1XzEgKDEpLm1wNCIsImlhdCI6MTc2NzU1NTE3MCwiZXhwIjo0OTIxMTU1MTcwfQ.50HJMhGEx_yMB6YT29PJSbi_npM3ixRXSb3ZUtKRxY8", "_blank")}
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
               >
                 mira nuestro video desmotrativo del Agente de atencion
               </NeonButton>
             </motion.div>
           </motion.div>
 
+<<<<<<< HEAD
           <motion.div
+=======
+          <motion.div 
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
@@ -204,6 +272,7 @@ export default function Home() {
           >
             <div className="relative w-full max-w-lg aspect-square">
               {/* Main Image with floating animation */}
+<<<<<<< HEAD
               <motion.img
                 animate={{ y: [0, -20, 0] }}
                 transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
@@ -214,6 +283,18 @@ export default function Home() {
 
               {/* Floating UI Elements */}
               <motion.div
+=======
+              <motion.img 
+                animate={{ y: [0, -20, 0] }}
+                transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
+                src={brainImage} 
+                alt="AI Brain" 
+                className="w-full h-full object-contain drop-shadow-[0_0_50px_rgba(0,243,255,0.3)] pt-[75px] pb-[75px]"
+              />
+              
+              {/* Floating UI Elements */}
+              <motion.div 
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.5 }}
@@ -226,7 +307,11 @@ export default function Home() {
                 <div className="text-2xl font-orbitron font-bold text-white mt-1">99.9%</div>
               </motion.div>
 
+<<<<<<< HEAD
               <motion.div
+=======
+              <motion.div 
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.7 }}
@@ -327,7 +412,11 @@ export default function Home() {
       {/* CTA Section */}
       <section id="cta-section" className="py-24 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
         <div className="container mx-auto px-4 relative z-10 text-center">
           <NeonCard className="max-w-4xl mx-auto bg-black/80 border-primary/30 py-16">
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6 text-white">
@@ -336,8 +425,13 @@ export default function Home() {
             <p className="text-xl text-muted-foreground font-exo mb-8 max-w-2xl mx-auto">
               La competencia sigue durmiendo. Tú puedes automatizar mientras ellos descansan.
             </p>
+<<<<<<< HEAD
             <NeonButton
               className="text-xl px-10 py-5"
+=======
+            <NeonButton 
+              className="text-xl px-10 py-5" 
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
               glow
               onClick={() => window.open("https://calendly.com/imanagenteartificial/sesion-cotizacion-proyecto", "_blank")}
             >
@@ -346,10 +440,13 @@ export default function Home() {
           </NeonCard>
         </div>
       </section>
+<<<<<<< HEAD
 
       {/* Contact Section */}
       <ContactSection />
 
+=======
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
       {/* Footer */}
       <footer className="border-t border-white/10 bg-black py-12">
         <div className="container mx-auto px-4">
@@ -360,6 +457,7 @@ export default function Home() {
                 IMAN<span className="text-primary">AI</span>
               </span>
             </div>
+<<<<<<< HEAD
 
             <div className="flex gap-8 text-sm font-exo text-muted-foreground">
               <Dialog>
@@ -457,6 +555,13 @@ export default function Home() {
                 </DialogContent>
               </Dialog>
               <a href="#contacto" className="hover:text-primary transition-colors">Contacto</a>
+=======
+            
+            <div className="flex gap-8 text-sm font-exo text-muted-foreground">
+              <a href="#" className="hover:text-primary transition-colors">Privacidad</a>
+              <a href="#" className="hover:text-primary transition-colors">Términos</a>
+              <a href="#" className="hover:text-primary transition-colors">Contacto</a>
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
             </div>
 
             <div className="text-xs text-muted-foreground font-exo">
@@ -467,4 +572,8 @@ export default function Home() {
       </footer>
     </div>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105

@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
+<<<<<<< HEAD
 import { PricingDetail } from "@/components/pricing-detail";
 import { HowItWorksDetail } from "@/components/how-it-works-detail";
 import { TestimonialsDetail } from "@/components/testimonials-detail";
@@ -23,6 +24,15 @@ function Router() {
         <Route component={NotFound} />
       </Switch>
     </div>
+=======
+
+function Router() {
+  return (
+    <Switch>
+      <Route path="/" component={Home} />
+      <Route component={NotFound} />
+    </Switch>
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
   );
 }
 
@@ -30,7 +40,10 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+<<<<<<< HEAD
         <FluidCursor />
+=======
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
         <Toaster />
         <Router />
       </TooltipProvider>

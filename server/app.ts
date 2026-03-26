@@ -83,6 +83,10 @@ export default async function runApp(
   server.listen({
     port,
     host: "0.0.0.0",
+<<<<<<< HEAD
+=======
+    reusePort: true,
+>>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
   }, () => {
     log(`serving on port ${port}`);
   });
