@@ -1,7 +1,6 @@
 {
   "framework": "vite",
   "outputDirectory": "dist/public",
-<<<<<<< HEAD
   "rewrites": [
     {
       "source": "/api/(.*)",
@@ -13,7 +12,3 @@
     }
   ]
 }
-=======
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
-}
->>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
