@@ -6,7 +6,6 @@
 @theme inline {
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
-<<<<<<< HEAD
 
   --color-primary: hsl(var(--primary));
   --color-primary-foreground: hsl(var(--primary-foreground));
@@ -29,30 +28,6 @@
   --color-destructive: hsl(var(--destructive));
   --color-destructive-foreground: hsl(var(--destructive-foreground));
 
-=======
-  
-  --color-primary: hsl(var(--primary));
-  --color-primary-foreground: hsl(var(--primary-foreground));
-  
-  --color-secondary: hsl(var(--secondary));
-  --color-secondary-foreground: hsl(var(--secondary-foreground));
-  
-  --color-card: hsl(var(--card));
-  --color-card-foreground: hsl(var(--card-foreground));
-  
-  --color-popover: hsl(var(--popover));
-  --color-popover-foreground: hsl(var(--popover-foreground));
-  
-  --color-muted: hsl(var(--muted));
-  --color-muted-foreground: hsl(var(--muted-foreground));
-  
-  --color-accent: hsl(var(--accent));
-  --color-accent-foreground: hsl(var(--accent-foreground));
-  
-  --color-destructive: hsl(var(--destructive));
-  --color-destructive-foreground: hsl(var(--destructive-foreground));
-  
->>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
   --color-border: hsl(var(--border));
   --color-input: hsl(var(--input));
   --color-ring: hsl(var(--ring));
@@ -66,30 +41,18 @@
 
 :root {
   /* Dark Sci-Fi Theme Base */
-<<<<<<< HEAD
-  --background: 222 47% 8%;
-  /* Very dark blue */
-  --foreground: 210 40% 98%;
-
-  /* Neon Cyan */
-  --primary: 190 100% 50%;
-=======
   --background: 222 47% 8%; /* Very dark blue */
   --foreground: 210 40% 98%; /* White-ish */
 
   /* Neon Cyan */
-  --primary: 190 100% 50%; 
->>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
+  --primary: 190 100% 50%;
   --primary-foreground: 222 47% 11%;
 
   /* Neon Magenta */
   --secondary: 300 100% 50%;
   --secondary-foreground: 222 47% 11%;
 
-<<<<<<< HEAD
-=======
   /* Dark Cards with slight tint */
->>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
   --card: 222 47% 10%;
   --card-foreground: 210 40% 98%;
 
@@ -107,11 +70,7 @@
 
   --border: 217 33% 20%;
   --input: 217 33% 20%;
-<<<<<<< HEAD
-  --ring: 190 100% 50%;
-=======
   --ring: 190 100% 50%; /* Primary Glow Ring */
->>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
 
   --radius: 0.5rem;
 }
@@ -120,7 +79,6 @@
   * {
     @apply border-border;
   }
-<<<<<<< HEAD
 
   /* AJUSTE PARA FLUIDOS: El body debe ser transparente */
   body {
@@ -137,22 +95,7 @@
     background: transparent !important;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-=======
-  body {
-    @apply font-poppins antialiased bg-background text-foreground overflow-x-hidden;
-    background-image: 
-      radial-gradient(circle at 50% 0%, hsl(var(--primary) / 0.15) 0%, transparent 50%),
-      radial-gradient(circle at 80% 50%, hsl(var(--secondary) / 0.08) 0%, transparent 40%);
-  }
-  
   h1, h2, h3, h4, h5, h6 {
->>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
     @apply font-orbitron tracking-wider;
   }
 }
@@ -161,11 +104,7 @@
   .text-glow-primary {
     text-shadow: 0 0 10px hsl(var(--primary) / 0.5), 0 0 20px hsl(var(--primary) / 0.3);
   }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
   .text-glow-secondary {
     text-shadow: 0 0 10px hsl(var(--secondary) / 0.5), 0 0 20px hsl(var(--secondary) / 0.3);
   }
@@ -185,26 +124,20 @@
   /* Futuristic Grid Background */
   .bg-grid-pattern {
     background-size: 50px 50px;
-<<<<<<< HEAD
     background-image:
-=======
-    background-image: 
->>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
       linear-gradient(to right, hsl(var(--border) / 0.3) 1px, transparent 1px),
       linear-gradient(to bottom, hsl(var(--border) / 0.3) 1px, transparent 1px);
     mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
   }
 }
 
-<<<<<<< HEAD
-=======
 .cursor-follower {
   position: fixed;
   width: 450px;
   height: 450px;
-  background: radial-gradient(circle, 
-    hsl(var(--primary) / 0.4) 0%, 
-    hsl(var(--secondary) / 0.2) 30%, 
+  background: radial-gradient(circle,
+    hsl(var(--primary) / 0.4) 0%,
+    hsl(var(--secondary) / 0.2) 30%,
     transparent 70%
   );
   border-radius: 50%;
@@ -213,38 +146,25 @@
   transform: translate(-50%, -50%);
   mix-blend-mode: screen;
   filter: blur(50px);
-  box-shadow: 
+  box-shadow:
     0 0 60px hsl(var(--primary) / 0.3),
     0 0 100px hsl(var(--secondary) / 0.1);
 }
 
->>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
-<<<<<<< HEAD
 
 ::-webkit-scrollbar-track {
   background: hsl(var(--background));
 }
 
-=======
-::-webkit-scrollbar-track {
-  background: hsl(var(--background));
-}
->>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
 ::-webkit-scrollbar-thumb {
   background: hsl(var(--muted));
   border-radius: 4px;
 }
-<<<<<<< HEAD
 
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--primary));
 }
-=======
-::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--primary));
-}
->>>>>>> 8ad28201ddd864850563e11a25b48ac7e5519105
