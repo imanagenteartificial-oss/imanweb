@@ -27,7 +27,7 @@ export function TailedCursor({
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const historyRef = useRef<Point[]>([]);
     const mouseRef = useRef({ x: 0, y: 0 });
-    const requestRef = useRef<number>();
+    const requestRef = useRef<number | undefined>(undefined);
 
     useEffect(() => {
         const canvas = canvasRef.current;

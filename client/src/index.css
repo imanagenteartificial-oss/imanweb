@@ -41,8 +41,10 @@
 
 :root {
   /* Dark Sci-Fi Theme Base */
-  --background: 222 47% 8%; /* Very dark blue */
-  --foreground: 210 40% 98%; /* White-ish */
+  --background: 222 47% 8%;
+  /* Very dark blue */
+  --foreground: 210 40% 98%;
+  /* White-ish */
 
   /* Neon Cyan */
   --primary: 190 100% 50%;
@@ -70,7 +72,8 @@
 
   --border: 217 33% 20%;
   --input: 217 33% 20%;
-  --ring: 190 100% 50%; /* Primary Glow Ring */
+  --ring: 190 100% 50%;
+  /* Primary Glow Ring */
 
   --radius: 0.5rem;
 }
@@ -95,7 +98,12 @@
     background: transparent !important;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-orbitron tracking-wider;
   }
 }
@@ -136,10 +144,9 @@
   width: 450px;
   height: 450px;
   background: radial-gradient(circle,
-    hsl(var(--primary) / 0.4) 0%,
-    hsl(var(--secondary) / 0.2) 30%,
-    transparent 70%
-  );
+      hsl(var(--primary) / 0.4) 0%,
+      hsl(var(--secondary) / 0.2) 30%,
+      transparent 70%);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;

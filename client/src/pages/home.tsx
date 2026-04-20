@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
 import { Link } from "wouter";
+import { HlsVideo } from "@/components/ui/hls-video";
 import brainImage from "@assets/generated_images/futuristic_neon_ai_brain_illustration.png";
 
 import { HowItWorksDetail } from "@/components/how-it-works-detail";
@@ -146,11 +147,20 @@ export default function Home() {
         )}
       </nav>
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+      <section className="relative min-h-screen flex items-center overflow-hidden z-0">
+        {/* Background Video Effect - full coverage */}
+        <div className="absolute inset-0 -z-20 w-full h-full pointer-events-none overflow-hidden">
+          <HlsVideo
+            src="https://stream.mux.com/Aa02T7oM1wH5Mk5EEVDYhbZ1ChcdhRsS2m1NYyx4Ua1g.m3u8"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        {/* Dark overlay to keep text readable without blurring the video */}
+        <div className="absolute inset-0 -z-15 bg-black/50 pointer-events-none" />
         {/* Background Elements */}
-        <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-20 -z-10 pointer-events-none" />
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[100px] -z-10 animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-[100px] -z-10 animate-pulse" style={{ animationDelay: "2s" }} />
+        <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern opacity-10 -z-10 pointer-events-none" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[100px] -z-10 animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-[100px] -z-10 animate-pulse" style={{ animationDelay: "2s" }} />
 
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -243,8 +253,29 @@ export default function Home() {
         </div>
       </section>
       {/* Benefits Section */}
-      <section id="soluciones" className="py-20 bg-black/30 relative">
-        <div className="container mx-auto px-4">
+      <section id="soluciones" className="py-20 bg-transparent relative overflow-hidden z-0">
+        {/* Base de color para fucionar el fondo gris del robot */}
+        <div className="absolute inset-0 -z-20 bg-background" />
+        
+        {/* Focos de luz estilo nebulosa para dar color y resplandor al modelo 3D */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/90 rounded-full blur-[120px] z-[-15]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[500px] bg-secondary/80 rounded-full blur-[150px] z-[-15]" />
+        
+        {/* Spline 3D Background */}
+        <div 
+          className="absolute inset-0 -z-10 w-full h-full mix-blend-luminosity opacity-100"
+          style={{ WebkitMaskImage: 'radial-gradient(ellipse at center, black 30%, transparent 75%)', maskImage: 'radial-gradient(ellipse at center, black 30%, transparent 75%)' }}
+        >
+          <iframe 
+            src="https://my.spline.design/nexbotbyaximoriscopycopy-6rnTuLTei6kpAegyEQW8McWK/" 
+            frameBorder="0" 
+            width="100%" 
+            height="100%" 
+            title="Spline Robot Background"
+            className="w-full h-full"
+          />
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-orbitron font-bold mb-4 text-glow-primary">Potencia Infinita</h2>
             <p className="text-muted-foreground font-exo max-w-2xl mx-auto">
@@ -325,11 +356,20 @@ export default function Home() {
       <PricingDetail />
       <DemoForm />
       {/* CTA Section */}
-      <section id="cta-section" className="py-24 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
+      <section id="cta-section" className="py-24 relative overflow-hidden isolate">
+        {/* Background Video */}
+        <div className="absolute inset-0 z-0 w-full h-full pointer-events-none overflow-hidden">
+          <HlsVideo
+            src="https://stream.mux.com/sDz01Os9GN02ltJvgikeaUvZWsLRiR5FX5GuadCRkQc7E.m3u8"
+            className="w-full h-full object-cover opacity-50"
+          />
+        </div>
+        {/* Dark + color tint overlay to match the page palette */}
+        <div className="absolute inset-0 z-[1] bg-black/55 pointer-events-none" />
+        <div className="absolute inset-0 z-[1] bg-gradient-to-br from-primary/20 via-transparent to-secondary/15 pointer-events-none mix-blend-overlay" />
 
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <NeonCard className="max-w-4xl mx-auto bg-black/80 border-primary/30 py-16">
+          <NeonCard className="max-w-4xl mx-auto bg-black/20 backdrop-blur-[2px] border-primary/30 py-16">
             <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6 text-white">
               ¿Listo para el Siguiente Nivel?
             </h2>
