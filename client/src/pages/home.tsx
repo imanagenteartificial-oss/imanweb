@@ -176,7 +176,7 @@ export default function Home() {
               </span>
             </motion.div>
 
-            <motion.h1 variants={fadeIn} className="md:text-7xl font-orbitron font-bold mb-6 text-[41px]">
+            <motion.h1 variants={fadeIn} className="md:text-7xl font-orbitron font-bold mb-6 text-[28px] sm:text-[34px]">
               Automatizamos <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-secondary animate-gradient bg-300%">
                 tu Negocio
