@@ -38,7 +38,7 @@ export function TestimonialsDetail() {
             Confianza Absoluta
           </span>
         </div>
-        <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6 text-white">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-orbitron font-bold mb-6 text-white">
           Empresas que <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
             Viven el Futuro

@@ -12,7 +12,7 @@ export function PricingDetail() {
               Planes de Inversión
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6 text-white text-glow-primary">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-orbitron font-bold mb-6 text-white text-glow-primary">
             Escala tu Negocio
           </h2>
           <p className="text-lg text-muted-foreground font-exo max-w-2xl mx-auto">

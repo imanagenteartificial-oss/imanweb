@@ -43,7 +43,7 @@ export function HowItWorksDetail() {
               Inteligencia Superior
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6 leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-orbitron font-bold mb-6 leading-tight">
             No es un Chatbot, <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-white">
               es tu Empleado Digital

@@ -201,7 +201,7 @@ export default function Home() {
                 glow
                 onClick={() => window.open("https://wdylnfbjiysejkvdftgf.supabase.co/storage/v1/object/sign/varios/SVID_20250718_122805_1%20(3).mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80ZjI5ZDNmZS1hY2NlLTRiNzMtYjQyZi01MTk4ZGNjNGYzNmUiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ2YXJpb3MvU1ZJRF8yMDI1MDcxOF8xMjI4MDVfMSAoMykubXA0IiwiaWF0IjoxNzc0NDkzOTgxLCJleHAiOjMzMzEwNDkzOTgxfQ.S6bAjQloH4cbaKiTo1opm8VjiA11TqEV5p0WzKTWzK0", "_blank")}
               >
-                mira nuestro video desmotrativo del Agente de atencion
+                Video Demostrativo: Agente de Atención
               </NeonButton>
             </motion.div>
           </motion.div>
@@ -277,7 +277,7 @@ export default function Home() {
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-orbitron font-bold mb-4 text-glow-primary">Potencia Infinita</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-orbitron font-bold mb-6 text-white text-glow-primary">Potencia Infinita</h2>
             <p className="text-muted-foreground font-exo max-w-2xl mx-auto">
               Nuestros agentes autónomos optimizan cada aspecto de tu operación empresarial.
             </p>
@@ -320,7 +320,7 @@ export default function Home() {
       <section className="py-20 relative overflow-hidden" id="como-funciona">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-orbitron font-bold mb-4 text-glow-secondary">Protocolo de Activación</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-orbitron font-bold mb-4 text-glow-secondary">Protocolo de Activación</h2>
             <p className="text-muted-foreground font-exo max-w-2xl mx-auto">
               Implementación rápida y segura en tres fases.
             </p>
@@ -370,7 +370,7 @@ export default function Home() {
 
         <div className="container mx-auto px-4 relative z-10 text-center">
           <NeonCard className="max-w-4xl mx-auto bg-black/20 backdrop-blur-[2px] border-primary/30 py-16">
-            <h2 className="text-4xl md:text-5xl font-orbitron font-bold mb-6 text-white">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-orbitron font-bold mb-6 leading-tight">
               ¿Listo para el Siguiente Nivel?
             </h2>
             <p className="text-xl text-muted-foreground font-exo mb-8 max-w-2xl mx-auto">
