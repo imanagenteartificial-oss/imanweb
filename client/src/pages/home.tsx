@@ -24,6 +24,9 @@ import { TestimonialsDetail } from "@/components/testimonials-detail";
 import { PricingDetail } from "@/components/pricing-detail";
 import { DemoForm } from "@/components/demo-form";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { CatalogSection } from "@/components/sections/CatalogSection";
+import { AntiFallSection } from "@/components/sections/AntiFallSection";
+import { DiagnosticQuiz } from "@/components/sections/DiagnosticQuiz";
 import {
   Dialog,
   DialogContent,
@@ -316,13 +319,22 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <CatalogSection />
+      <DiagnosticQuiz />
+
       {/* How It Works Section */}
-      <section className="py-20 relative overflow-hidden" id="como-funciona">
+      <section className="py-20 relative overflow-hidden bg-black/20" id="como-funciona">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
+            <div className="inline-block mb-4 px-4 py-1 rounded-full border border-secondary/30 bg-secondary/10 backdrop-blur-sm">
+              <span className="text-secondary font-exo text-sm tracking-widest uppercase font-bold">
+                Metodología
+              </span>
+            </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-orbitron font-bold mb-4 text-glow-secondary">Protocolo de Activación</h2>
             <p className="text-muted-foreground font-exo max-w-2xl mx-auto">
-              Implementación rápida y segura en tres fases.
+              Del diagnóstico a producción en una semana o menos.
             </p>
           </div>
 
@@ -330,11 +342,12 @@ export default function Home() {
             {/* Connecting Line (Desktop) */}
             <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary/50 to-transparent -translate-y-1/2 z-0" />
 
-            <div className="grid md:grid-cols-3 gap-12 relative z-10">
+            <div className="grid md:grid-cols-4 gap-8 relative z-10">
               {[
-                { step: "01", title: "Análisis", desc: "Mapeamos tus procesos actuales.", icon: <ShieldCheck /> },
-                { step: "02", title: "Integración", desc: "Conectamos nuestra IA a tu ecosistema.", icon: <Bot /> },
-                { step: "03", title: "Despliegue", desc: "Activación total y optimización continua.", icon: <Zap /> }
+                { step: "01", period: "Día 1 · Mañana", title: "Diagnóstico", desc: "Mapeamos tus procesos y priorizamos el mayor ROI.", icon: <ShieldCheck /> },
+                { step: "02", period: "Día 1 · Tarde", title: "Propuesta y Diseño", desc: "Definimos workflows concretos e hitos de éxito.", icon: <Bot /> },
+                { step: "03", period: "Días 2 - 7", title: "Implementación", desc: "Construimos sobre n8n, conectamos APIs y probamos.", icon: <Cpu /> },
+                { step: "04", period: "Día 8+", title: "Operación Activa", desc: "Lanzamiento y sistema Anti-Caídas vigilando 24/7.", icon: <Zap /> }
               ].map((item, i) => (
                 <div key={i} className="flex flex-col items-center text-center">
                   <div className="w-20 h-20 rounded-full bg-background border-2 border-primary flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(0,243,255,0.3)] relative">
@@ -343,8 +356,9 @@ export default function Home() {
                     </div>
                     <div className="text-primary w-8 h-8 [&>svg]:w-full [&>svg]:h-full">{item.icon}</div>
                   </div>
-                  <h3 className="text-2xl font-orbitron font-bold mb-2">{item.title}</h3>
-                  <p className="text-muted-foreground font-exo">{item.desc}</p>
+                  <span className="text-[10px] font-orbitron text-secondary tracking-wider uppercase mb-1">{item.period}</span>
+                  <h3 className="text-xl font-orbitron font-bold mb-2 text-white">{item.title}</h3>
+                  <p className="text-muted-foreground font-exo text-xs px-2 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -352,6 +366,7 @@ export default function Home() {
         </div>
       </section>
       <HowItWorksDetail />
+      <AntiFallSection />
       <TestimonialsDetail />
       <PricingDetail />
       <DemoForm />
